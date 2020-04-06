@@ -59,6 +59,10 @@ footer {
 #about-me {
   display: flex;
 }
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
 .desktop-menu-block {
   display: flex;
   justify-content: space-between;
