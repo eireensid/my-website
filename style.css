@@ -246,6 +246,7 @@ footer {
 .telegram-img {
   width: 30px;
   border-radius: 50%;
+  display: inline-block;
 }
 .my-code-block {
   display: flex;
@@ -599,11 +600,15 @@ footer {
     max-width: 320px;
     margin: 0 auto;
   }
+  section {
+    padding-left: 0;
+    padding-right: 0;
+  }
   h1 {
     font-size: 2em;
   }
   h2 {
-    font-size: 1.5em;
+    font-size: 1.7em;
   }
   .header-max-width {
     max-width: 320px;
@@ -643,8 +648,8 @@ footer {
     flex-basis: 33%;
   }
   .know-custom-width {
-    height: 75px;
-    width: 70px;
+    height: 88px;
+    width: 78px;
   }
   .know-custom-height {
     height: 75px;
@@ -654,20 +659,50 @@ footer {
     height: 80px;
     width: 80px;
   }
+  #my-contacts .title {
+    padding-top: 50px;
+  }
+  .owl-carousel {
+    padding-left: 0!important;
+    padding-right: 0!important;
+  }
+  .owl-nav {
+    justify-content: space-around;
+  }
+  .owl-prev, .owl-next {
+    position: static;
+    width: 50px;
+    height: 50px;
+  }
+  .laptop {
+    width: 100%!important;
+  }
+  .video {
+    width: 75%;
+    height: 65.8%;
+    margin-top: -6px;
+  }
   .rectangle-dashed p {
     font-size: 18px;
   }
+  .rectangle-dashed .email {
+    padding-bottom: 15px;
+  }
+  .my-code-block {
+    padding-top: 10px;
+  }
   .more-text {
     font-size: 17px;
+    padding-right: 0;
   }
   .btn-click {
-    width: 50%;
+    width: 40%;
   }
   .footer-max-width {
     max-width: 320px;
   }
   .footer-text {
-    font-size: 18px;
+    font-size: 16px;
   }
 }
 
