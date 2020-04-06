@@ -679,7 +679,6 @@ footer {
   }
   .video {
     width: 75%;
-    height: 65.8%;
     margin-top: -6px;
   }
   .rectangle-dashed p {
@@ -693,7 +692,7 @@ footer {
   }
   .more-text {
     font-size: 17px;
-    padding-right: 0;
+    padding-right: 7px;
   }
   .btn-click {
     width: 40%;
