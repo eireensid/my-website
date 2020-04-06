@@ -676,9 +676,11 @@ footer {
   }
   .laptop {
     width: 100%!important;
+    height: 100%!important;
   }
   .video {
     width: 75%;
+    height: 65.8%;
     margin-top: -6px;
   }
   .rectangle-dashed p {
