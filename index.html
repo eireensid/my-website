@@ -12,8 +12,6 @@
   <!-- <link rel="stylesheet" href="bootstrap-4.4.1/css/bootstrap.css"> -->
   <link href="https://fonts.googleapis.com/css?family=Assistant:200,300,400&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="owlcarousel/dist/assets/owl.carousel.min.css">
-<link rel="stylesheet" href="owlcarousel/dist/assets/owl.theme.default.min.css">
 </head>
 <body>
   <header>
@@ -65,10 +63,14 @@
 
     <section id="about-me">
       <div class="about-block">
-        <h1>Hello👋 My name is Irina</h1>
+        <div class="head-block fadeInLeft">
+          <h1 class="hello">Hello</h1>
+          <img class="img-fluid hand" src="img/waving1.svg" alt="">
+          <h1> My name is Irina</h1>
+        </div>
         <p>I'm a junior web developer and I’m passionated about technology.</p>
         <p>For the past year I have been actively studying the basics of programming and gaining experience.</p>
-        <p>Also I know English at the Upper Intermediate level and have some knowledge about marketing and design. I like to study and learn something new.</p>
+        <p>Also I know English at the Upper Intermediate level and have some knowledge in marketing and design. I like to study and learn something new.</p>
         <p>Looking forward to working with you!</p> 
       </div>
       <div class="photo-block">
@@ -93,27 +95,27 @@
 
     <section id="my-projects">
       <h2 class="title title-padding-100">Examples of the projects I’ve done </h2>
-      <div class="container projects-block">
-        <div class="row">
-          <div class="col owl-carousel">
-            <div class="laptop-block">
-              <img class="laptop" src="img/laptop2.png" alt="">
-              <video class="video" controls="controls" src="video/IMG_0669.MOV"></video>
-            </div>
-            <div class="laptop-block">
-              <img class="laptop" src="img/laptop2.png" alt="">
-              <video class="video" controls="controls" src="video/IMG_0668.MOV"></video>
-            </div>
-            <div class="laptop-block">
-              <img class="laptop" src="img/laptop2.png" alt="">
-              <video class="video" controls="controls" src="video/IMG_0667.MOV"></video>
-            </div>
-            <div class="laptop-block">
-              <img class="laptop" src="img/laptop2.png" alt="">
-              <video class="video" controls="controls" src="video/IMG_0666.MOV"></video>
-            </div>
-          </div>           
+      <div class="carousel-block">
+        <button class="btn-back">
+          <img class="arrows arrow-left" src="img/left-arrow.png">
+        </button>
+        <div class="laptop-block">
+          <img class="laptop" src="img/laptop2.png">
+          <iframe id="video1" width="560" height="315" src="https://www.youtube.com/embed/9NjhChKMjFM"
+          frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
         </div>
+        <button class="btn-next">
+          <img class="arrows arrow-right" src="img/right-arrow.png">
+        </button>
+      </div>
+      <div class="bottom-btn-block">
+        <button class="bottom-btn btn-left">
+          <img class="arrows" src="img/left-arrow.png">
+        </button>
+        <button class="bottom-btn btn-right">
+          <img class="arrows" src="img/right-arrow.png">
+        </button>
       </div>
     </section>
 
@@ -122,9 +124,13 @@
       <div class="container rectangle-dashed">
         <div class="row">
           <div class="col-lg-6 col-md-6 col-sm-12">
-            <div><p class='email'>Email<img class="telegram-img img-fluid" src="img/mail4.svg">: eireen.sid@gmail.com</p></div>
+            <div class="email-block">
+              <span class='email'>Email</span><img class="telegram-img img-fluid" src="img/mail4.svg"><span>: eireen.sid@gmail.com</span>
+            </div>
             <!-- <p>+79043416958</p> -->
-            <div><p>Telegram<img class="telegram-img img-fluid" src="img/telegram.svg">: @eireen_sid</p></div>
+            <div class="telegram-block">
+              <span>Telegram</span><img class="telegram-img img-fluid" src="img/telegram.svg"><span>: @eireen_sid</span>
+            </div>
           </div>
           <div class="col-lg-6 col-md-6 col-sm-12 my-code-block">
             <p class="more-text">More of my code:</p>
@@ -147,7 +153,5 @@
     </div>
   </footer>  
 </body>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script src="owlcarousel/dist/owl.carousel.min.js"></script>
 <script src="script.js"></script>
 </html>
