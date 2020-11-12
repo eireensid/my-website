@@ -38,10 +38,13 @@ document.addEventListener('DOMContentLoaded', function(){
       iframe.src = newSrc
     }
     var videos = [
+      'https://youtube.com/embed/PnrrIh1NveQ',
+      'https://youtube.com/embed/PxslLYPhej0',
       'https://www.youtube.com/embed/9NjhChKMjFM',
-      'https://www.youtube.com/embed/CaBioMr4qcs',
-      'https://www.youtube.com/embed/xjK1Oincr9w',
-      'https://www.youtube.com/embed/TAJim20qnd8'
+      // 'https://www.youtube.com/embed/CaBioMr4qcs',
+      // 'https://www.youtube.com/embed/xjK1Oincr9w',
+      'https://www.youtube.com/embed/TAJim20qnd8',
+      'https://youtube.com/embed/Y3zM0Ompzdk'
     ]
     var curInd = 0
     document.querySelector('.btn-next').addEventListener('click', function() {

@@ -35,15 +35,7 @@ ul {
   margin-block-end: 0;
 }
 h1 {
-  background: rgb(190,203,237);
-  background: linear-gradient(135deg, rgba(190,203,237,1) 11%, rgba(194,204,236,1) 21%, rgba(206,207,233,1) 32%, rgba(221,215,234,1) 43%, rgba(232,220,231,1) 54%, rgba(232,208,213,1) 65%, rgba(233,200,201,1) 76%, rgba(231,181,177,1) 87%, rgba(234,185,180,1) 100%);
-  font-family: 'Pacifico';
-  -webkit-background-clip: text; /* Обрезаем фон по тексту */
-  background-clip: text;
-  -webkit-text-fill-color: transparent; /* Прозрачный текст */
-  line-height: 1.8!important;
   font-size: 2.5rem;
-  margin-bottom: 0.5rem!important;
 }
 h2 {
   font-size: 2rem;
@@ -97,6 +89,16 @@ footer {
 .menu-item:not(:last-child) {
   margin-right: 30px;
 }
+.htitle {
+  background: rgb(190,203,237);
+  background: linear-gradient(135deg, rgba(190,203,237,1) 11%, rgba(194,204,236,1) 21%, rgba(206,207,233,1) 32%, rgba(221,215,234,1) 43%, rgba(232,220,231,1) 54%, rgba(232,208,213,1) 65%, rgba(233,200,201,1) 76%, rgba(231,181,177,1) 87%, rgba(234,185,180,1) 100%);
+  font-family: 'Pacifico';
+  -webkit-background-clip: text; /* Обрезаем фон по тексту */
+  background-clip: text;
+  -webkit-text-fill-color: transparent; /* Прозрачный текст */
+  line-height: 1.8!important;
+  margin-bottom: 0.5rem!important;
+}
 
 .about-block {
   display: flex;
@@ -105,6 +107,9 @@ footer {
 }
 .about-block p {
   margin-bottom: 19px;
+  font-family: Roboto, sans-serif;
+  margin-top: 20px;
+  color: gray;
 }
 .head-block {
   display: flex;
@@ -116,12 +121,12 @@ footer {
   width: 50px;
 }
 .photo-block {
-  padding-left: 7%;
+  /* padding-left: 7%; */
   display: flex;
   justify-content: flex-end;
 }
 .photo {
-  width: 85%;
+  width: 78%;
   height: 530px;
 }
 .title {
@@ -139,8 +144,8 @@ footer {
 .title-padding-70 {
   padding-top: 70px;
 }
-.title-padding-100 {
-  padding-top: 100px;
+.title-padding-50 {
+  padding-top: 50px;
 }
 .know-block {
   display: flex;
@@ -222,6 +227,11 @@ footer {
   font-weight: bolder;
   margin-bottom: 10%;
   outline: none;
+}
+.pbtns {
+  display: flex!important;
+  justify-content: center!important;
+  margin-bottom: 20px;
 }
 .arrows {
   width: 30%;
@@ -604,6 +614,7 @@ footer {
     font-weight: bolder;
     outline: none;
   }
+
   .rectangle-dashed p {
     font-size: 18px;
   }
