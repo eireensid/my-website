@@ -18,6 +18,12 @@ section {
 footer {
   padding-left: 10%;
   padding-right: 10%;
+  background: rgb(190,203,237);
+  background: linear-gradient(135deg, rgba(190,203,237,1) 11%, rgba(194,204,236,1) 21%, rgba(206,207,233,1) 32%, rgba(221,215,234,1) 43%, rgba(232,220,231,1) 54%, rgba(232,208,213,1) 65%, rgba(233,200,201,1) 76%, rgba(231,181,177,1) 87%, rgba(234,185,180,1) 100%);
+  margin-top: 50px;
+  /* background: #e8d0d5; */
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 a {
   color: white!important;
@@ -35,19 +41,11 @@ ul {
   margin-block-end: 0;
 }
 h1 {
-  font-size: 2.5rem;
+  font-size: 4.5rem;
 }
 h2 {
-  font-size: 2rem;
+  font-size: 3.7rem;
   margin-bottom: 0.5rem!important;
-}
-footer {
-  background: rgb(190,203,237);
-  background: linear-gradient(135deg, rgba(190,203,237,1) 11%, rgba(194,204,236,1) 21%, rgba(206,207,233,1) 32%, rgba(221,215,234,1) 43%, rgba(232,220,231,1) 54%, rgba(232,208,213,1) 65%, rgba(233,200,201,1) 76%, rgba(231,181,177,1) 87%, rgba(234,185,180,1) 100%);
-  margin-top: 50px;
-  /* background: #e8d0d5; */
-  padding-top: 10px;
-  padding-bottom: 10px;
 }
 #about-me {
   display: flex;
@@ -147,6 +145,9 @@ footer {
 .title-padding-50 {
   padding-top: 50px;
 }
+.title-projects {
+  padding-bottom: 20px;
+}
 .know-block {
   display: flex;
   justify-content: space-between;
@@ -213,6 +214,61 @@ footer {
   display: flex;
   align-items: center;
 }
+.pbtns {
+  display: flex!important;
+  justify-content: center!important;
+  margin-bottom: 30px;
+}
+.pbtn {
+  background: linear-gradient(135deg, rgba(190,203,237,1) 11%, rgba(194,204,236,1) 21%, rgba(206,207,233,1) 32%, rgba(221,215,234,1) 43%, rgba(232,220,231,1) 54%, rgba(232,208,213,1) 65%, rgba(233,200,201,1) 76%, rgba(231,181,177,1) 87%, rgba(234,185,180,1) 100%)!important;
+  color: white;
+  outline: none;
+  border-radius: 5px;
+  border: none;
+  padding: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.pbtn-left {
+  margin-right: 10px;
+}
+.pbtn-right {
+  margin-left: 10px;
+}
+.pbtn-right span {
+  font-weight: bolder;
+}
+.pbtn-right span:hover {
+  border-bottom: 1px dotted #fff;
+}
+.project-link {
+  font-weight: 400;
+}
+
+/* Modal  */
+.modal-centered {
+  margin-top: 10%;
+}
+.modal-header-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.modal-project-title {
+  font-family: Assistant,sans-serif;
+  font-size: 19px;
+  font-weight: bolder;
+  color: white;
+}
+.modal-content {
+  background: linear-gradient(135deg, rgba(190,203,237,1) 11%, rgba(194,204,236,1) 21%, rgba(206,207,233,1) 32%, rgba(221,215,234,1) 43%, rgba(232,220,231,1) 54%, rgba(232,208,213,1) 65%, rgba(233,200,201,1) 76%, rgba(231,181,177,1) 87%, rgba(234,185,180,1) 100%)!important;
+  border-radius: 5px;
+  border: none;
+}
+.modal-close {
+  outline: none;
+}
+
 .btn-back, .btn-next {
   flex-basis: 10%;
   height: 60px;
@@ -227,11 +283,6 @@ footer {
   font-weight: bolder;
   margin-bottom: 10%;
   outline: none;
-}
-.pbtns {
-  display: flex!important;
-  justify-content: center!important;
-  margin-bottom: 20px;
 }
 .arrows {
   width: 30%;
@@ -260,7 +311,8 @@ footer {
   display: none;
 }
 .rectangle-dashed {
-  display: inline-block;	
+  /* display: inline-block;	 */
+  width: 100%;
   border-radius: 10px;
   border: 1px dashed;
   border-image-source: linear-gradient(135deg, rgba(190,203,237,1) 11%, rgba(194,204,236,1) 21%, rgba(206,207,233,1) 32%, rgba(221,215,234,1) 43%, rgba(232,220,231,1) 54%, rgba(232,208,213,1) 65%, rgba(233,200,201,1) 76%, rgba(231,181,177,1) 87%, rgba(234,185,180,1) 100%);
@@ -303,6 +355,9 @@ footer {
 .rectangle-dashed .telegram-block {
   display: flex;
   align-items: center;
+}
+.contacts-row {
+  display: flex;
 }
 .telegram-img {
   width: 30px;
@@ -526,7 +581,7 @@ footer {
   #about-me {
     display: block;
   }
-  h1 {
+  h1, h2 {
     text-align: center;
   }
   .hello {
@@ -579,6 +634,20 @@ footer {
   #my-contacts .title {
     padding-top: 50px;
   }
+  .pbtns {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .pbtn-left {
+    margin-right: 0px;
+  }
+  .pbtn-right {
+    margin-left: 0px;
+    margin-bottom: 5px;
+  }
+  .project-desc li {
+    font-size: 16px;
+  }
   .arrows {
     width: 60%;
     height: 40%;
@@ -621,6 +690,9 @@ footer {
   .rectangle-dashed .email-block {
     padding-bottom: 15px;
   }
+  .contacts-row {
+    flex-direction: column;
+  }
   .my-code-block {
     padding-top: 10px;
     justify-content: center;
@@ -650,14 +722,11 @@ footer {
     padding-right: 0;
   }
   h1 {
-    font-size: 2em;
+    font-size: 1.8em;
     margin-bottom: 1.5rem!important;
   }
   h2 {
-    font-size: 1.7em;
-  }
-  .header-max-width {
-    max-width: 320px;
+    font-size: 1.5em;
   }
   .menu {
     display: none;
@@ -736,6 +805,20 @@ footer {
     height: 59%;
     left: 12%;
   }
+  .pbtns {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .pbtn-left {
+    margin-right: 0px;
+  }
+  .pbtn-right {
+    margin-left: 0px;
+    margin-bottom: 5px;
+  }
+  .project-desc li {
+    font-size: 17px;
+  }
   .btn-back, .btn-next {
     position: absolute;
     display: none;
@@ -765,9 +848,11 @@ footer {
   .rectangle-dashed .email-block {
     padding-bottom: 15px;
   }
+  .contacts-row {
+    flex-direction: column;
+  }
   .my-code-block {
     padding-top: 10px;
-    justify-content: center;
   }
   .more-text {
     font-size: 17px;
@@ -775,9 +860,6 @@ footer {
   }
   .btn-click {
     width: 30%!important;
-  }
-  .footer-max-width {
-    max-width: 320px;
   }
   .footer-text {
     font-size: 16px;

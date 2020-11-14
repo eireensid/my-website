@@ -37,38 +37,94 @@ document.addEventListener('DOMContentLoaded', function(){
       // свойство src найденного элемента меняется на значение массива по новому индексу
       iframe.src = newSrc
     }
+
+    // 
+    function setProjectDescModalContentByInd(ind) {
+      document.getElementById("projectModalTitle").innerHTML = titles[ind]
+      var ul = document.querySelector('.project-desc')
+      
+      var list = projectDesc[ind]
+      ul.innerHTML = ''
+      for (var i = 0; i < list.length; i++) {
+        var li = document.createElement("li")
+        li.innerHTML = list[i];
+        ul.appendChild(li);
+      }
+    }
+
+    //
+    function onChangeCurInd() {
+      setNewVideoSrcByInd(curInd)
+      setProjectDescModalContentByInd(curInd)
+    }
+
+    var linksUrl = [
+      'https://github.com/eireensid/todolist-react',
+      'https://github.com/eireensid/laravel-books-and-authors',
+      'https://github.com/eireensid/Hotel-site',
+      'https://github.com/eireensid/architecture-landing',
+      'https://github.com/eireensid/goods-filter'
+    ]
+
     var videos = [
       'https://youtube.com/embed/PnrrIh1NveQ',
       'https://youtube.com/embed/PxslLYPhej0',
       'https://www.youtube.com/embed/9NjhChKMjFM',
-      // 'https://www.youtube.com/embed/CaBioMr4qcs',
-      // 'https://www.youtube.com/embed/xjK1Oincr9w',
       'https://www.youtube.com/embed/TAJim20qnd8',
       'https://youtube.com/embed/Y3zM0Ompzdk'
     ]
+
+    var titles = [
+      'Todo list',
+      'Books and authors',
+      'Hotel booking',
+      'Architecture landing page',
+      'Goods filter'
+    ]
+
+    var projectDesc = {
+      0: ['- Добавление todo', '- Удаление todo', '- Фильтрация (выполнено / не выполнено)', '- Local storage'],
+      1: ['- С помощью миграций созданы таблицы «Авторы» и «Книги»',
+        '- Реализованы маршруты api для создания, чтения, модификации и удаления авторов и книг',
+        '- Создана админ-панель для настройки авторов и их книг',
+        '- Выведение списка авторов и их книг на главной странице'],
+      2: ['- Datepicker для выбора дат прибытия и отъезда',
+        '- Расчет количества гостей и комнат',
+        '- Слайдер для выбора диапазона цены номера',
+        '- Карточки комнат'],
+      3: ['- Поиск по странице',
+        '- Слайдер-карусель проектов',
+        '- Валидация контактной формы'],
+      4: ['- Фильтрация товара по бренду, размеру и цвету',
+        '- Модальное окно при покупке товара']
+    }
+
     var curInd = 0
-    document.querySelector('.btn-next').addEventListener('click', function() {
+    onChangeCurInd()
+
+    function increaseCurInd() {
       curInd = (curInd + 1) % videos.length
       // src video в начале = нулевой элемент массива
-      setNewVideoSrcByInd(curInd)
-    })
-    document.querySelector('.btn-back').addEventListener('click', function() {
+      onChangeCurInd()
+    }
+
+    function decreaseCurInd() {
       curInd = curInd - 1
       if (curInd < 0) {
         curInd = videos.length - 1
       }
-      setNewVideoSrcByInd(curInd)
-    })
-    document.querySelector('.btn-right').addEventListener('click', function() {
-      curInd = (curInd + 1) % videos.length
-      // src video в начале = нулевой элемент массива
-      setNewVideoSrcByInd(curInd)
-    })
-    document.querySelector('.btn-left').addEventListener('click', function() {
-      curInd = curInd - 1
-      if (curInd < 0) {
-        curInd = videos.length - 1
-      }
-      setNewVideoSrcByInd(curInd)
+      onChangeCurInd()
+    }
+    
+    document.querySelector('.btn-next').addEventListener('click', increaseCurInd)
+    document.querySelector('.btn-back').addEventListener('click', decreaseCurInd)
+
+    // Mobile view
+    document.querySelector('.btn-right').addEventListener('click', increaseCurInd)
+    document.querySelector('.btn-left').addEventListener('click', decreaseCurInd)
+
+    document.querySelector('.code-btn').addEventListener('click', function() {
+      var link = linksUrl[curInd]
+      document.getElementById("abc").href = link
     })
 })
