@@ -148,6 +148,20 @@ h2 {
 .title-projects {
   padding-bottom: 20px;
 }
+
+.course-program-title {
+  margin: 0!important;
+  font-size: 17px;
+  color: darkgray!important;
+  font-weight: bolder;
+  font-style: italic;
+}
+.course-program-description li {
+  color: darkgray;
+  font-size: 16px;
+  font-style: italic;
+}
+
 .know-block {
   display: flex;
   justify-content: space-between;
