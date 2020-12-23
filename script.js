@@ -59,31 +59,28 @@ document.addEventListener('DOMContentLoaded', function(){
     }
 
     var linksUrl = [
-      'https://github.com/eireensid/todolist-react',
+      'https://github.com/eireensid/animal-shelter',
       'https://github.com/eireensid/laravel-books-and-authors',
       'https://github.com/eireensid/Hotel-site',
-      'https://github.com/eireensid/architecture-landing',
-      'https://github.com/eireensid/goods-filter'
+      'https://github.com/eireensid/architecture-landing'
     ]
 
     var videos = [
-      'https://youtube.com/embed/PnrrIh1NveQ',
+      'https://youtube.com/embed/PAwuTx4i850',
       'https://youtube.com/embed/PxslLYPhej0',
       'https://www.youtube.com/embed/9NjhChKMjFM',
-      'https://www.youtube.com/embed/TAJim20qnd8',
-      'https://youtube.com/embed/Y3zM0Ompzdk'
+      'https://www.youtube.com/embed/TAJim20qnd8'
     ]
 
     var titles = [
-      'Todo list',
+      'Сайт приюта для животных',
       'Books and authors',
       'Hotel booking',
-      'Architecture landing page',
-      'Goods filter'
+      'Architecture landing page'
     ]
 
     var projectDesc = {
-      0: ['- Добавление todo', '- Удаление todo', '- Фильтрация (выполнено / не выполнено)', '- Local storage'],
+      0: ['- Адаптивная верстка сайта', '- Мобильное меню', '- Переиспользование карточек для домашних животных и животных приюта', '- Реализация карусели животных', '- Фильтрация животных', '- Реализация галереи и пагинации', '- Переиспользование модального окна', '- Хлебные крошки', '- Поиск по галерее', '- Local storage'],
       1: ['- С помощью миграций созданы таблицы «Авторы» и «Книги»',
         '- Реализованы маршруты api для создания, чтения, модификации и удаления авторов и книг',
         '- Создана админ-панель для настройки авторов и их книг',
@@ -94,9 +91,7 @@ document.addEventListener('DOMContentLoaded', function(){
         '- Карточки комнат'],
       3: ['- Поиск по странице',
         '- Слайдер-карусель проектов',
-        '- Валидация контактной формы'],
-      4: ['- Фильтрация товара по бренду, размеру и цвету',
-        '- Модальное окно при покупке товара']
+        '- Валидация контактной формы']
     }
 
     var curInd = 0
