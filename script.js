@@ -73,10 +73,10 @@ document.addEventListener('DOMContentLoaded', function(){
     ]
 
     var titles = [
-      'Сайт приюта для животных',
-      'Books and authors',
-      'Hotel booking',
-      'Architecture landing page'
+      'Сайт приюта для животных (Next.js)',
+      'Books and authors (Vue, Laravel)',
+      'Hotel booking (Vue.js)',
+      'Architecture landing page (Vue.js)'
     ]
 
     var projectDesc = {

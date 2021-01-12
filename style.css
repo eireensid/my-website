@@ -109,6 +109,14 @@ h2 {
   margin-top: 20px;
   color: gray;
 }
+.site-url {
+  color: gray!important;
+  font-weight: bolder;
+  text-decoration: underline;
+}
+.site-url:hover {
+  text-decoration: underline!important;
+}
 .head-block {
   display: flex;
   align-items: center;
